@@ -1,0 +1,17 @@
+#!/bin/bash
+################# EDIT ME #################
+
+VBOX_USERS=(vbox) # a space separated list of usernames for which the machines should be stopped/started
+EXECUTABLE=/opt/vbox_startstop/vbox_startstop.py #the path to the executable of the vbox_startstop.py script
+
+################# END EDIT ME #################
+
+test -x $DAEMON || exit 0
+
+set -e
+
+for user in ${VBOX_USERS[*]};do
+    sudo -H -u $user $EXECUTABLE $1
+done
+
+exit 0

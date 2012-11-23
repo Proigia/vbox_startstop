@@ -5,7 +5,7 @@ __author__      = "Dolf Andringa"
 __copyright__   = "Copyright (c) 2012, Dolf Andringa"
 
 __license__     = "MIT License"
-__version__     = "1.0"
+__version__     = "1.1"
 __maintainer__  = "Dolf Andringa"
 __email__       = "dolfandringa@gmail.com"
 __status__      = "Production"
