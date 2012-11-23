@@ -61,10 +61,10 @@ def prepare():
         os.mkdir(DIRNAME)
         open(os.path.join(DIRNAME,'stopped_machines'),'w')
     lockdir()
-    mgr=VirtualBoxManager(None,None)
-    vbox=mgr.vbox
-    session=mgr.mgr.getSessionObject(vbox)
-    return mgr,vbox,session
+    manager=VirtualBoxManager(None,None)
+    vbox=manager.vbox
+    session=manager.mgr.getSessionObject(vbox)
+    return manager,vbox,session
 
 def finish():
     unlockdir()
