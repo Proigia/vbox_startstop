@@ -118,7 +118,7 @@ def stop_all_machines(mgr,vbox,session):
             print('Machine %s is still starting up. Giving up waiting on it. We\'ll try to save state, but continue otherwise.'%m.name)
         stop_machine(m,session,mgr)
         stopped_machines.append(m)
-    f=get_stopped_machines_file('w')
+    f=get_stopped_machines_file('a')
     for m in stopped_machines:
         f.write("%s\n"%m.id)
     f.close()
