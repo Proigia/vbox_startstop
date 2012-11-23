@@ -6,7 +6,7 @@ EXECUTABLE=/opt/vbox_startstop/vbox_startstop.py #the path to the executable of 
 
 ################# END EDIT ME #################
 
-test -x $DAEMON || exit 0
+test -x $EXECUTABLE || exit 1
 
 set -e
 
